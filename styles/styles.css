@@ -2,18 +2,22 @@
 
 @font-face {
 	font-family: "Avenir";
-	src: local("Avenir") format(truetype);
+	src: local("Avenir") format(opentype);
 }
 
 @font-face {
 	font-family: "Lora";
-	src: url("fonts/Lora[wght].woff2") format(woff2) tech(variations);
+	src:
+		url("fonts/Lora[wght].woff") format(woff) tech(variations),
+		url("fonts/Lora[wght].woff2") format(woff2) tech(variations);
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Lora";
-	src: url("fonts/Lora-Italic[wght].woff2") format(woff2) tech(variations);
+	src:
+		url("fonts/Lora-Italic[wght].woff") format(woff) tech(variations),
+		url("fonts/Lora-Italic[wght].woff2") format(woff2) tech(variations);
 	font-style: italic;
 }
 
