@@ -155,8 +155,11 @@ dt::after {
 	content: "・";
 }
 
+dd {
+	font-style: italic;
+}
+
 dd a {
 	color: inherit;
-	font-style: italic;
 	text-decoration: none;
 }
