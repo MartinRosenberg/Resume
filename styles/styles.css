@@ -41,7 +41,7 @@
 	--fs-sm: calc(var(--fs-md) / var(--phi));
 	--fs-lg: calc(var(--fs-md) * var(--phi));
 	--fs-xl: calc(var(--fs-lg) * var(--phi));
-	font-family: "Avenir", sans-serif;
+	font-family: "Avenir";
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 }
