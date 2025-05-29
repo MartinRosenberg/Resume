@@ -1,0 +1,162 @@
+/* font definitions */
+
+@font-face {
+	font-family: "Avenir";
+	src: local("Avenir") format(truetype);
+}
+
+@font-face {
+	font-family: "Lora";
+	src: url("fonts/Lora[wght].woff2") format(woff2) tech(variations);
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lora";
+	src: url("fonts/Lora-Italic[wght].woff2") format(woff2) tech(variations);
+	font-style: italic;
+}
+
+/* the rest */
+
+@media screen {
+	:root {
+		height: 12in;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #eee;
+	}
+
+	.page {
+		border: thin solid #ddd;
+		background-color: white;
+	}
+}
+
+:root {
+	--color-title: #36c;
+	--phi: calc((1 + sqrt(5)) / 2);
+	--fs-md: 0.75rem;
+	--fs-sm: calc(var(--fs-md) / var(--phi));
+	--fs-lg: calc(var(--fs-md) * var(--phi));
+	--fs-xl: calc(var(--fs-lg) * var(--phi));
+	font-family: "Avenir", sans-serif;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+}
+
+.page {
+	width: 8.5in;
+	height: 11in;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	width: calc(8.5in - 0.7in - 0.7in);
+	height: calc(11in - 0.7in - 0.7in);
+	font-size: var(--fs-md);
+	overflow-y: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: var(--fs-sm);
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: var(--fs-sm);
+}
+
+section > div {
+	display: flex;
+	flex-direction: column;
+	gap: var(--fs-sm);
+}
+
+ul {
+	padding-inline-start: 0.25in;
+}
+
+ul li {
+	padding-inline-start: 0.125in;
+}
+
+/* headers */
+
+h1, h2, h3 {
+	font-family: "Lora";
+	font-weight: normal;
+}
+
+h1, h2 {
+	color: var(--color-title);
+}
+
+h1 {
+	font-size: var(--fs-xl);
+}
+
+h2 {
+	border-bottom: thin solid black;
+	font-size: var(--fs-lg);
+}
+
+h3 {
+	display: flex;
+	font-size: var(--fs-md);
+}
+
+h3 .role {
+	flex-grow: 1;
+	text-align: start;
+}
+
+h3 .when {
+	flex-grow: 1;
+	font-weight: normal;
+	text-align: end;
+}
+
+/* DL */
+
+dl {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+dl div {
+	width: calc(100% / 3);
+}
+
+dl div.left {
+	text-align: start;
+}
+
+dl div.center {
+	text-align: center;
+}
+
+dl div.right {
+	text-align: end;
+}
+
+dt, dd {
+	display: inline;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dt::after {
+	content: "・";
+}
+
+dd a {
+	color: inherit;
+	font-style: italic;
+	text-decoration: none;
+}

@@ -2,7 +2,8 @@
 <html lang="en-US">
 
 <head>
-	<link rel="stylesheet" media="all" href="styles.css">
+	<link rel="stylesheet" media="all" href="styles/reset.css">
+	<link rel="stylesheet" media="all" href="styles/styles.css">
 	<!-- media="all/print/screen" -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +11,138 @@
 </head>
 
 <body>
-	Hello world!
+	<div class="page">
+		<div class="content">
+			<header>
+				<h1>Martin Rosenberg</h1>
+			</header>
+			<section>
+				<dl>
+					<div role="presentation" class="left">
+						<dt>Email</dt><dd><a href="mailto:Martin.B.Rosenberg@gmail.com">Martin.B.Rosenberg@gmail.com</a></dd>
+					</div>
+					<div role="presentation" class="center">
+						<dt>Phone</dt><dd><a href="tel:+18472711986">847-271-1986</a></dd>
+					</div>
+					<div role="presentation" class="right">
+						<dt>Location</dt><dd>Greater Denver; will travel</dd>
+					</div>
+					<div role="presentation" class="left">
+						<dt>Website</dt><dd><a href="https://martinbrosenberg.com">MartinBRosenberg.com</a></dd>
+					</div>
+					<div role="presentation" class="center">
+						<dt>GitHub</dt><dd><a href="https://github.com/MartinRosenberg">MartinRosenberg</a></dd>
+					</div>
+					<div role="presentation" class="right">
+						<dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/MartinBRosenberg">in/MartinBRosenberg</a></dd>
+					</div>
+				</dl>
+			</section>
+			<section>
+				<h2>Experience</h2>
+				<div>
+					<h3><span class="role"><span style="font-weight: 700;">Senior Software Engineer & Cross-Team Liaison</span> <i>(Contract) at Minute
+								Key</i></span><span class="when">Jun 2021–Nov
+							2021</span></h3>
+					<ul>
+						<li>Coordinated cross-functional initiative for the development of a new dog tag engraving kiosk product as
+							dedicated liaison from software engineering team to hardware engineering and manufacturing engineering
+							teams.
+						</li>
+						<li>Gathered functional and non-functional requirements; created and prioritized stories; and led agile
+							ceremonies.</li>
+						<li>Led the team in defining and implementing best practices for testing, documentation, git workflow, and
+							Jira
+							workflow; as well as coding by initiating conversion of Vue.js front end from JavaScript (ES2021) to
+							TypeScript.</li>
+						<li>Contributed to back end and software-level robotics controller pure functional (FP) Scala code bases using
+							Scalaz.</li>
+					</ul>
+				</div>
+				<div>
+					<h3><span class="role"><b>Software Engineer</b> <i>at 60Hertz Inc.</i></span><span class="when">Nov 2019–May
+							2020</span></h3>
+					<ul>
+						<li>Developed a greenfield project with attention to end-to-end-testable code, long-term maintenance,
+							scalability,
+							resilience, security, usability, and poor internet access from remote locations.</li>
+						<li>Managed the full development lifecycle of multiple core REST/CRUD+ microservices in NestJS, including AWS
+							and
+							Docker infrastructure setup, and testing with Jest and Supertest.</li>
+						<li>Automated the data pipeline for a thumbnail generation service, where images uploaded to AWS S3 triggered
+							thumbnail generation via an AWS Lambda function written in sharp module.</li>
+						<li>Trained the junior developer in the team’s development environment, including Git, Node.js, npm, and
+							TypeScript.</li>
+						<li>Integrated MongoDB connection into multiple microservices with repository pattern and Mongoose library.
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3><span class="role"><b>Software Development Engineer in Test</b> <i>at Backstop Solutions
+								Group</i></span><span class="when">Feb 2016–Apr 2017</span></h3>
+					<ul>
+						<li>Co-developed a ScalaTest-backed testing framework and domain-specific language (DSL), that dramatically
+							improved
+							performance, reliability, and maintainability over the prior framework, as well as enabled concurrency. The
+							new
+							framework was selected by department vote to replace the existing Ruby RSpec testing framework.</li>
+						<li>Appointed by director to train testers and developers in Scala to allow them to contribute their own
+							tests.
+						</li>
+						<li>Established code review policy, code conventions, and style guide for testing framework, which encouraged
+							idiomatic functional programming (FP) patterns, and improved maintainability.</li>
+						<li>Collaborated on Clojure-based rules engine with product engineering team.</li>
+					</ul>
+				</div>
+				<div>
+					<h3><span class="role"><b>Software Testing Engineer</b> <i>at Interactive Health Inc.</i></span><span
+							class="when">May
+							2015–Feb 2016</span></h3>
+					<ul>
+						<li>Skills: C#, Microsoft SQL Server (MSSQL) with T-SQL, NUnit, test automation.
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3><span class="role"><b>User Experience & Quality Assurance Consultant</b> <i>(Contract) at
+								BakedFinn</i></span><span class="when">Jan 2014–Dec 2014</span></h3>
+				</div>
+				<div>
+					<h3><span class="role"><b>Quality Assurance Analyst</b> <i>(Internship) at Juggle.com (now
+								OneSpace)</i></span><span class="when">Jun 2013–Sep 2013</span></h3>
+					<ul>
+						<li>Skills: Python 3, PyUnit, API testing.</li>
+					</ul>
+				</div>
+				<div>
+					<h3><span class="role"><b>Course Assistant, Introduction to Computer Science</b> <i>at University of Illinois
+								at
+								Urbana-Champaign</i></span><span class="when">Aug 2012–Dec
+							2012</span></h3>
+					<ul>
+						<li>Skills: Java, Big O, object-oriented programming (OOP).</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<h2>Education</h2>
+				<div>
+					<h3><span class="role"><b>The Complete React Developer Course (w/ Hooks and Redux)</b> <i>by Andrew
+								Mead</i></span><span class="when">Jun 2019</span></h3>
+					<ul>
+						<li>Also including Babel, Express, Firebase, Heroku, Jest, Node.js, SCSS, Webpack, and more.</li>
+					</ul>
+				</div>
+				<div>
+					<h3><span class="role"><b>Bachelor of Arts in Linguistics</b> <i>from University of Illinois at
+								Urbana-Champaign</i></span><span class="when">May 2013</span></h3>
+					<ul>
+						<li>Computer science coursework: Computer Architecture, Data Structures, User Interface Design.</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</div>
 </body>
 
 </html>
