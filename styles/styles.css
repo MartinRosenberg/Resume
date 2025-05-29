@@ -19,23 +19,9 @@
 
 /* the rest */
 
-@media screen {
-	:root {
-		height: 12in;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-color: #eee;
-	}
-
-	.page {
-		border: thin solid #ddd;
-		background-color: white;
-	}
-}
-
 :root {
 	--color-title: #36c;
+	--margin: 0.7in;
 	--phi: calc((1 + sqrt(5)) / 2);
 	--fs-md: 0.75rem;
 	--fs-sm: calc(var(--fs-md) / var(--phi));
@@ -46,17 +32,39 @@
 	text-rendering: optimizeLegibility;
 }
 
-.page {
-	width: 8.5in;
-	height: 11in;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+@media print {
+	@page {
+		margin: var(--margin);
+		size: letter portrait;
+	}
+}
+
+@media screen {
+	:root {
+		height: 12in;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #eee;
+	}
+
+	.page {
+		width: 8.5in;
+		height: 11in;
+		border: thin solid #ddd;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.content {
+		width: calc(8.5in - 2 * var(--margin));
+		height: calc(11in - 2 * var(--margin));
+	}
 }
 
 .content {
-	width: calc(8.5in - 0.7in - 0.7in);
-	height: calc(11in - 0.7in - 0.7in);
 	font-size: var(--fs-md);
 	overflow-y: hidden;
 	display: flex;
